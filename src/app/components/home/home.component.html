@@ -1,0 +1,16 @@
+
+<h2>Todos los Post</h2>
+<button  mat-flat-button [routerLink]="['/newpost']" color="primary">nuevo</button>
+<section>
+    <mat-card [routerLink]="['/','moreinfo',post?.id]" class="card" *ngFor="let post of posts">
+        <mat-card-header>
+            {{post.title}}
+        </mat-card-header>
+        <!-- <mat-card-content>
+            {{post.body}}
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-flat-button color="primary">eliminar</button>
+        </mat-card-actions> -->
+    </mat-card>
+</section>

@@ -1,0 +1,12 @@
+<p>newpost works!</p>
+<h2>Agregar post</h2>
+
+<div>
+    <form  [formGroup]="form" (submit)="saveData()">
+        <input type="text" formControlName="title">
+        <input type="text" formControlName="body">
+        <button mat-flat-button color="primary">enviar</button>
+    </form>
+</div>
+<button  mat-flat-button [routerLink]="['']" color="primary">volver</button>
+

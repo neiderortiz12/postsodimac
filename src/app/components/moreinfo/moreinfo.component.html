@@ -1,0 +1,18 @@
+<h1>{{post.title}}</h1>
+<h3>{{post.body}}</h3>
+
+<h2>comentarios</h2>
+<section>
+    <mat-card class="card" *ngFor="let comentario of comentarios">
+        <mat-card-header>
+            {{comentario.body}}
+        </mat-card-header>
+        <!-- <mat-card-content>
+            {{post.body}}
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-flat-button color="primary">eliminar</button>
+        </mat-card-actions> -->
+    </mat-card>
+</section>
+<button [routerLink]="['']" mat-flat-button color="primary">Volver</button>
